@@ -4,7 +4,7 @@ const images = {
   morning:
     "https://cloud-se00hwg8s-hack-club-bot.vercel.app/2logo_sm_light.png",
   afternoon:
-    "https://cloud-se00hwg8s-hack-club-bot.vercel.app/0logo_sm_grey.png",
+    "https://i.ibb.co/F42m838/LOGO-SM-GREY.png",
   night: "https://cloud-se00hwg8s-hack-club-bot.vercel.app/1logo_sm.png",
 };
 async function setPFP() {
