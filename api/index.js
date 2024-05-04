@@ -1,7 +1,5 @@
-const express = require("express");
 const { WebClient } = require("@slack/web-api");
 const axios = require("axios").default;
-
 const images = {
   morning:
     "https://cloud-e1kfxnjm7-hack-club-bot.vercel.app/0logo_sm_light.png",
@@ -9,7 +7,6 @@ const images = {
     "https://cloud-77gu0ey02-hack-club-bot.vercel.app/0logo_lg_grey.png",
   night: "https://cloud-or0wstykt-hack-club-bot.vercel.app/0logo_sm.png",
 };
-
 async function setPFP() {
   var hour = new Date().getHours() + 5.5;
   let image;
@@ -33,18 +30,7 @@ async function setPFP() {
   });
 }
 
-const app = express();
-
-app.get("/api/setPFP", async (req, res) => {
-  try {
-    await setPFP();
-    res.send("Started changing your PFP!");
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("An error occurred while changing your PFP.");
-  }
-});
-
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+export default async (req, res) => {
+  await setPFP();
+  res.send("Started changing your PFP!");
+};
