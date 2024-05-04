@@ -2,10 +2,10 @@ const { WebClient } = require("@slack/web-api");
 const axios = require("axios").default;
 const images = {
   morning:
-    "https://cloud-e1kfxnjm7-hack-club-bot.vercel.app/0logo_sm_light.png",
+    "https://cloud-se00hwg8s-hack-club-bot.vercel.app/2logo_sm_light.png",
   afternoon:
-    "https://cloud-77gu0ey02-hack-club-bot.vercel.app/0logo_lg_grey.png",
-  night: "https://cloud-or0wstykt-hack-club-bot.vercel.app/0logo_sm.png",
+    "https://cloud-se00hwg8s-hack-club-bot.vercel.app/0logo_sm_grey.png",
+  night: "https://cloud-se00hwg8s-hack-club-bot.vercel.app/1logo_sm.png",
 };
 async function setPFP() {
   var hour = new Date().getHours() + 5.5;
