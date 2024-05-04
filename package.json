@@ -1,0 +1,1 @@
+{ "dependencies": { "@slack/web-api": "^7.0.4", "axios": "^1.6.8" } }
